@@ -1,0 +1,31 @@
+{
+  "schemaVersion": 1,
+  "id": "ceptea-addon",
+  "version": "${version}",
+  "name": "Ceptea Addon",
+  "description": "Literally adds a single module.",
+  "authors": [
+    "Ceptea"
+  ],
+  "contact": {
+    "repo": "https://github.com/ceptea"
+  },
+  "icon": "assets/template/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "meteor": [
+      "com.ceptea.addon.Addon"
+    ]
+  },
+  "mixins": [
+    "addon-template.mixins.json"
+  ],
+  "custom": {
+    "meteor-client:color": "225,25,25"
+  },
+  "depends": {
+    "java": ">=17",
+    "minecraft": ">=${mc_version}",
+    "meteor-client": "*"
+  }
+}
